@@ -2,13 +2,13 @@ import java.util.ArrayList;
 public class Maths
 {
   // create ArrayList instance variable
-  private ArrayList<Double> numberList = new ArrayList<Double>();
+  private ArrayList<Double> numberList;
 
   public Maths(ArrayList<Double> enterList)
   {
     numberList = enterList;
   }
-  
+
   public ArrayList<Double> getNumberList()
   {
     return numberList;
@@ -39,10 +39,10 @@ public class Maths
       {
         if (getNumberList().get(i) > getNumberList().get(i+1))
         {
-         // swap
-         double curNum = getNumberList().get(i);
-         numberList.set(i, getNumberList().get(i+1));
-         numberList.set(i+1, curNum);
+          // swap
+          double curNum = getNumberList().get(i);
+          numberList.set(i, getNumberList().get(i+1));
+          numberList.set(i+1, curNum);
         }
       }
     }
